@@ -1,0 +1,30 @@
+.inner-cursor {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  transform: translate(-50%, -50%);
+  background-color: $accent-color;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s;
+  z-index: 1000;
+}
+
+.grow {
+  width: 4.8rem;
+  height: 4.8rem;
+  transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor {
+  position: fixed;
+  width: 4.8rem;
+  height: 4.8rem;
+  transform: translate(-50%, -50%);
+  border: 1px solid $accent-color;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+}

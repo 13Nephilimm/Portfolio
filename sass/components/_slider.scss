@@ -1,0 +1,42 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 70rem;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 1s;
+}
+
+.dots {
+  display: flex;
+}
+.dots .dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.dots .dots-dot:last-child {
+  margin: 0;
+}
+.dots .dots__dot--active {
+  background-color: $accent-color;
+  opacity: 1;
+}

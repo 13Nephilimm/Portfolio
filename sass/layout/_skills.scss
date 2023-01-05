@@ -1,0 +1,59 @@
+.skills {
+  margin-top: 6.4rem;
+  padding: 12rem 6.4rem 12rem 6.4rem;
+  display: grid;
+  place-items: center;
+
+  &-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+  }
+
+  &-heading-tertiary {
+    color: $accent-color;
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2rem 3.6rem;
+  }
+
+  &-heading-primary {
+    color: $secondary-text-color-white;
+    font-size: 6.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 2.4rem 3.6rem;
+    line-height: 9.6rem;
+  }
+
+  &-text {
+    color: $text-color-white;
+    padding: 2.4rem 4.8rem;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    line-height: 4.8rem;
+    font-size: 2.2rem;
+    text-align: center;
+
+    strong {
+      color: $accent-color;
+    }
+
+    a:link,
+    a:visited {
+      display: inline-block;
+      color: $accent-color;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    a:hover,
+    a:active {
+      box-shadow: 0 0.4rem 3rem rgba($accent-color, 0.7);
+      font-size: 2.4rem;
+      transform: rotate(8deg) scale(1.2);
+    }
+  }
+}

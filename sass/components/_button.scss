@@ -1,0 +1,32 @@
+.header {
+  .btn-box {
+    padding: 2.4rem;
+    animation: moveInRight 0.7s;
+
+    .hero-button:link,
+    .hero-button:visited {
+      text-decoration: none;
+      font-size: 2.4rem;
+      color: $accent-color;
+      font-weight: 200;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+
+      background-image: linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 50%,
+        $accent-color 50%
+      );
+      background-size: 195%;
+      transition: all 0.4s;
+    }
+
+    .hero-button:hover,
+    .hero-button:active {
+      background-position: 202.5%;
+      color: $accent-color;
+      transform: translateX(1rem);
+    }
+  }
+}
